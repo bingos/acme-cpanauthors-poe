@@ -4,6 +4,7 @@ name 'Acme-CPANAuthors-POE';
 author 'Chris Williams';
 version_from 'lib/Acme/CPANAuthors/POE.pm';
 abstract_from 'lib/Acme/CPANAuthors/POE.pm';
+readme_from 'lib/Acme/CPANAuthors/POE.pm';
 license 'perl';
 perl_version '5.006';
 build_requires 'Test::More' => 0.47;
