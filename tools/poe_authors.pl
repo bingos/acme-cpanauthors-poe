@@ -8,8 +8,9 @@ use CPAN::DistnameInfo;
 use Getopt::Long;
 
 my $version;
+my $mirror = 'http://cpan.hexten.net/';
 
-GetOptions('version=s' => \$version);
+GetOptions('version=s', \$version, 'mirror=s', \$mirror);
 
 die "No version specified with --version\n" unless $version and $version =~ /^[0-9\.]+$/;
 
@@ -17,7 +18,6 @@ my $mailrc = '01mailrc.txt.gz';
 my $packages = '02packages.details.txt.gz';
 
 my $location = '.';
-my $mirror = 'http://cpan.hexten.net/';
  
 my @files = ('authors/01mailrc.txt.gz','modules/02packages.details.txt.gz');
  

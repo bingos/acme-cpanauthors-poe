@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use vars qw($VERSION);
 
-$VERSION = '0.08';
+$VERSION = '0.10';
 
 use Acme::CPANAuthors::Register (
   AAR => q[Alessandro Ranellucci],
@@ -16,7 +16,6 @@ use Acme::CPANAuthors::Register (
   AIMASS => q[Alejandro Imass],
   ANDYPUR => q[Andrew V. Purshottam],
   APOCAL => q[Apocalypse],
-  AVAR => q[AEvar Arnfjord Bjarmason],
   BINGOS => q[Chris Williams],
   BSMITH => q[Benjamin Smith],
   BTROTT => q[Benjamin Trott],
@@ -87,6 +86,7 @@ use Acme::CPANAuthors::Register (
   RJP => q[Rob Partington],
   RKITOVER => q[Rafael Kitover],
   SABECK => q[Scott Beck],
+  SAPER => q[Sebastien Aperghis-Tramoni],
   SEGAN => q[Sean Egan],
   SHARIFULN => q[Anatoly Sharifulin],
   SMCNABB => q[Steve McNabb],
@@ -147,7 +147,6 @@ It is currently statically generated information, I hope to make it dynamic in t
   AIMASS => q[Alejandro Imass],
   ANDYPUR => q[Andrew V. Purshottam],
   APOCAL => q[Apocalypse],
-  AVAR => q[AEvar Arnfjord Bjarmason],
   BINGOS => q[Chris Williams],
   BSMITH => q[Benjamin Smith],
   BTROTT => q[Benjamin Trott],
@@ -218,6 +217,7 @@ It is currently statically generated information, I hope to make it dynamic in t
   RJP => q[Rob Partington],
   RKITOVER => q[Rafael Kitover],
   SABECK => q[Scott Beck],
+  SAPER => q[Sebastien Aperghis-Tramoni],
   SEGAN => q[Sean Egan],
   SHARIFULN => q[Anatoly Sharifulin],
   SMCNABB => q[Steve McNabb],
