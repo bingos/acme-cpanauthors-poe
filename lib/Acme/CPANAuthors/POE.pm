@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use vars qw($VERSION);
 
-$VERSION = '0.10';
+$VERSION = '0.12';
 
 use Acme::CPANAuthors::Register (
   AAR => q[Alessandro Ranellucci],
@@ -78,6 +78,7 @@ use Acme::CPANAuthors::Register (
   PGUZIS => q[Peter Guzis],
   PHAYLON => q[Robert 'phaylon' Sedlacek],
   PLU => q[Johannes Plunien],
+  PRIVI => q[Markus Mueller],
   PTINSLEY => q[Paul David Tinsley],
   RCAPUTO => q[Rocco Caputo],
   RCLAMP => q[Richard Clamp],
@@ -209,6 +210,7 @@ It is currently statically generated information, I hope to make it dynamic in t
   PGUZIS => q[Peter Guzis],
   PHAYLON => q[Robert 'phaylon' Sedlacek],
   PLU => q[Johannes Plunien],
+  PRIVI => q[Markus Mueller],
   PTINSLEY => q[Paul David Tinsley],
   RCAPUTO => q[Rocco Caputo],
   RCLAMP => q[Richard Clamp],
