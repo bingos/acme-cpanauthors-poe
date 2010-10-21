@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use vars qw($VERSION);
 
-$VERSION = '0.12';
+$VERSION = '0.14';
 
 use Acme::CPANAuthors::Register (
   AAR => q[Alessandro Ranellucci],
@@ -16,6 +16,7 @@ use Acme::CPANAuthors::Register (
   AIMASS => q[Alejandro Imass],
   ANDYPUR => q[Andrew V. Purshottam],
   APOCAL => q[Apocalypse],
+  ARCANEZ => q[Justin Hunter],
   BINGOS => q[Chris Williams],
   BSMITH => q[Benjamin Smith],
   BTROTT => q[Benjamin Trott],
@@ -27,12 +28,12 @@ use Acme::CPANAuthors::Register (
   DAMS => q[Damien Krotkine],
   DAVINCHI => q[Pavel Boldin],
   DAZJORZ => q[Sjors Gielen],
-  DGL => q[David Leadbeater],
   DMAKI => q[Daisuke Maki],
   DMCC => q[Dan McCormick],
   DOLMEN => q[Olivier 'dolmen' Mengue],
   DSNOPEK => q[David Snopek],
   ECALDER => q[Erick Calder],
+  ERIAM => q[Eriam Schaffter],
   EWATERS => q[Eric Waters],
   FLETCH => q[Mike Fletcher],
   FRODWITH => q[Paul Driver],
@@ -148,6 +149,7 @@ It is currently statically generated information, I hope to make it dynamic in t
   AIMASS => q[Alejandro Imass],
   ANDYPUR => q[Andrew V. Purshottam],
   APOCAL => q[Apocalypse],
+  ARCANEZ => q[Justin Hunter],
   BINGOS => q[Chris Williams],
   BSMITH => q[Benjamin Smith],
   BTROTT => q[Benjamin Trott],
@@ -159,12 +161,12 @@ It is currently statically generated information, I hope to make it dynamic in t
   DAMS => q[Damien Krotkine],
   DAVINCHI => q[Pavel Boldin],
   DAZJORZ => q[Sjors Gielen],
-  DGL => q[David Leadbeater],
   DMAKI => q[Daisuke Maki],
   DMCC => q[Dan McCormick],
   DOLMEN => q[Olivier 'dolmen' Mengue],
   DSNOPEK => q[David Snopek],
   ECALDER => q[Erick Calder],
+  ERIAM => q[Eriam Schaffter],
   EWATERS => q[Eric Waters],
   FLETCH => q[Mike Fletcher],
   FRODWITH => q[Paul Driver],
