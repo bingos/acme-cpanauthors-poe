@@ -52,7 +52,7 @@ while (<$fh>) {
 while (<$fh>) {
   chomp;
   my ($module,$version,$package_path) = split ' ', $_;
-  next unless $module =~ /^POE/;
+  next unless $module =~ /(^POE|::POE$)/;
   my $dist = CPAN::DistnameInfo->new( $package_path );
   next unless $dist;
   next if $poe_authors{ $dist->cpanid };
