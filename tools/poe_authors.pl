@@ -10,9 +10,7 @@ use Getopt::Long;
 my $version;
 my $mirror = 'http://cpan.hexten.net/';
 
-GetOptions('version=s', \$version, 'mirror=s', \$mirror);
-
-die "No version specified with --version\n" unless $version and $version =~ /^[0-9\.]+$/;
+GetOptions('mirror=s', \$mirror);
 
 my $mailrc = '01mailrc.txt.gz';
 my $packages = '02packages.details.txt.gz';
@@ -69,11 +67,10 @@ push @authors, qq{  $_ => q[$poe_authors{$_}],\n} for sort keys %poe_authors;
 print <<HEADER;
 package Acme::CPANAuthors::POE;
 
+#ABSTRACT: We are CPAN Authors of POE
+
 use strict;
 use warnings;
-use vars qw(\$VERSION);
-
-\$VERSION = '$version';
 
 use Acme::CPANAuthors::Register (
 HEADER
@@ -85,11 +82,7 @@ print <<MIDDLE;
 
 q[We are POEsters];
 
-__END__
-
-=head1 NAME
-
-Acme::CPANAuthors::POE - We are CPAN Authors of POE
+=pod
 
 =head1 SYNOPSIS
 
@@ -117,16 +110,6 @@ MIDDLE
 print "$_" for @authors;
 
 print <<TAIL;
-
-=head1 AUTHOR
-
-Chris C<BinGOs> Williams <chris\@bingosnet.co.uk>
-
-=head1 LICENSE
-
-Copyright E<copy> Chris Williams
-
-This module may be used, modified, and distributed under the same terms as Perl itself. Please see the license that came with your Perl distribution for details.
 
 =head1 SEE ALSO
 

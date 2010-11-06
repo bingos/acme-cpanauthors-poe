@@ -1,10 +1,9 @@
 package Acme::CPANAuthors::POE;
 
+#ABSTRACT: We are CPAN Authors of POE
+
 use strict;
 use warnings;
-use vars qw($VERSION);
-
-$VERSION = '0.14';
 
 use Acme::CPANAuthors::Register (
   AAR => q[Alessandro Ranellucci],
@@ -38,6 +37,7 @@ use Acme::CPANAuthors::Register (
   FLETCH => q[Mike Fletcher],
   FRODWITH => q[Paul Driver],
   GDSL => q[Sergey Skvortsov],
+  GETTY => q[Torsten Raudssus],
   GRAYKOT => q[Sergey Kotenko],
   GREGFAST => q[Greg Fast],
   GRODITI => q[Guillermo Roditi],
@@ -113,11 +113,7 @@ use Acme::CPANAuthors::Register (
 
 q[We are POEsters];
 
-__END__
-
-=head1 NAME
-
-Acme::CPANAuthors::POE - We are CPAN Authors of POE
+=pod
 
 =head1 SYNOPSIS
 
@@ -171,6 +167,7 @@ It is currently statically generated information, I hope to make it dynamic in t
   FLETCH => q[Mike Fletcher],
   FRODWITH => q[Paul Driver],
   GDSL => q[Sergey Skvortsov],
+  GETTY => q[Torsten Raudssus],
   GRAYKOT => q[Sergey Kotenko],
   GREGFAST => q[Greg Fast],
   GRODITI => q[Guillermo Roditi],
@@ -242,16 +239,6 @@ It is currently statically generated information, I hope to make it dynamic in t
   YAPPO => q[Kazuhiro Osawa],
   YBLUSSEAU => q[Yves Blusseau],
   ZOFFIX => q[Zoffix Znet],
-
-=head1 AUTHOR
-
-Chris C<BinGOs> Williams <chris@bingosnet.co.uk>
-
-=head1 LICENSE
-
-Copyright E<copy> Chris Williams
-
-This module may be used, modified, and distributed under the same terms as Perl itself. Please see the license that came with your Perl distribution for details.
 
 =head1 SEE ALSO
 
