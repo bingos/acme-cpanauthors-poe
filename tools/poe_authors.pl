@@ -16,12 +16,12 @@ my $mailrc = '01mailrc.txt.gz';
 my $packages = '02packages.details.txt.gz';
 
 my $location = '.';
- 
+
 my @files = ('authors/01mailrc.txt.gz','modules/02packages.details.txt.gz');
- 
+
 foreach my $file ( @files ) {
   my $url = join '', $mirror, $file;
- 
+
   my $ff = File::Fetch->new( uri => $url );
   my $stat = $ff->fetch( to => $location );
   next unless $stat;
@@ -45,14 +45,14 @@ close $mrc;
 my %poe_authors;
 
 my $fh = IO::Zlib->new( '02packages.details.txt.gz', "rb" ) or die "$!\n";
- 
+
 while (<$fh>) {
   last if /^\s*$/;
 }
 while (<$fh>) {
   chomp;
   my ($module,$version,$package_path) = split ' ', $_;
-  next unless $module =~ /(^POEx?|::POE$)/;
+  next unless $module =~ /(^POEx?|Bot::BasicBot|::POE$)/;
   my $dist = CPAN::DistnameInfo->new( $package_path );
   next unless $dist;
   next if $poe_authors{ $dist->cpanid };
